@@ -1,0 +1,29 @@
+.searchBox {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.search {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 55px;
+  line-height: 55px;
+  border: 1px solid var(--color-lightSkyBlue);
+  border-radius: 30px;
+  padding: 0 30px 0 70px;
+  outline: none;
+  font-size: 14px;
+  color: var(--color-darkSlaty);
+}
+.searchBox img {
+  position: absolute;
+  left: 27px;
+  top: 15px;
+}
+.searchbox {
+  border: 1px solid var(--color-malibu1);
+}
+.searchbox:hover {
+  border: 1px solid var(--color-shamrock);
+}

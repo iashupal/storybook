@@ -1,0 +1,271 @@
+.medical__wrapper {
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+}
+.tabContainer {
+  padding: 0px 15px;
+  color: var(--color-white);
+  cursor: pointer;
+  /* margin: 12px auto; */
+}
+.tabContainer img {
+  padding-right: 10px;
+}
+.tabContainer p {
+  /* display: inline-block; */
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  color: #8692a1;
+  margin-top: 14px;
+}
+
+.activeTab {
+  padding: 0px 15px;
+  /* margin: 12px auto; */
+  position: relative;
+}
+.activeTab .step-text {
+  padding: 15px 0;
+  display: flex;
+  grid-template-rows: 1fr;
+  text-align: left;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.activeTab .step-text img {
+  background-color: #0078bf;
+  width: 50px;
+}
+.activeTab .step-text p {
+  color: #414f63;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+  margin-top: 0;
+}
+.activeTab .step-text p span {
+  color: #0078bf;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tab_icon {
+  float: right;
+  transform: rotate(270deg);
+  position: relative;
+  padding-right: 10px;
+  top: -2px;
+}
+section.tabsWrapper:last-child {
+  border-right: transparent;
+}
+/* family inner tabs */
+.medical__family {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  border-top: 1px solid #e0e0e0;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 9fr;
+  align-items: inherit;
+  justify-content: center;
+}
+.medical__family_tabs {
+  /* border-right: 1px solid #e0e0e0; */
+  padding: 10px 0;
+}
+.medical__family_tabs .tabsWrapper {
+  border-right: transparent;
+}
+.medical__family_tabs .tabsWrapper .step-text p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.familyTab {
+  padding: 0;
+}
+.familyTab .step-text {
+  padding: 25px 45px 25px 0;
+  display: flex;
+  grid-template-rows: 1fr;
+  text-align: left;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.familyTab .step-text,
+.medical__family .activeTab .step-text {
+  justify-content: flex-end;
+}
+.medical__family .activeTab .step-text p span,
+.medical__family .activeTab .step-text p br {
+  display: none;
+}
+.familyTab .step-text p.tab__familyName {
+  order: 2;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  padding: 4px 9px 5px 9px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+.medical__family_tabs
+  .tabsWrapper:first-child
+  .familyTab
+  .step-text
+  p.tab__familyName::before {
+  display: none;
+}
+.medical__family .activeTab::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: -5px;
+  background-color: #0078bf;
+  border-radius: 50%;
+  top: 45%;
+  z-index: 1;
+}
+.familyTab .step-text p.tab__familyName::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #f2f2f2;
+  height: 50px;
+  left: 14px;
+  bottom: 36px;
+}
+.medical__family .activeTab .step-text {
+  padding: 25px 45px 25px 0;
+}
+.medical__family .activeTab .step-text p.tab__familyName::before {
+  border: 1px solid #0078bf;
+}
+.medical__family .activeTab .step-text p.tab__familyName {
+  background-color: #0078bf;
+  color: white;
+}
+.medical__family_content {
+  /* padding: 45px; */
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+/* close family inner tabs */
+/* form css */
+.medical__birth h3,
+.medical__birth p {
+  font-size: 18px;
+  line-height: 21px;
+}
+.medical__birth h3 {
+  font-weight: bold;
+  color: #3d3d3d;
+}
+.medical__birth p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.medical__birth_formRow1,
+.medical__birth_formRow2,
+.medical__birth_formRow3,
+.medical__birth_formRow4,
+.medical__birth_formRow5 {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.medical__birth_formRow1 {
+  grid-template-columns: 5fr 5fr 2fr;
+}
+.medical__birth_formRow2 {
+  width: 100%;
+  grid-template-columns: 2.15fr 3fr;
+}
+.medical__birth_formRow3,
+.medical__birth_formRow5 {
+  width: 100%;
+  grid-template-columns: 1fr;
+}
+.medical__birth_formRow4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btn-select .btn-addon .btn {
+  width: auto;
+}
+.textarea {
+  height: 100px !important;
+  width: 100%;
+  padding: 10px 12px;
+}
+.form-group .form-control {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 12px;
+}
+.medical__birth_innerWrapper {
+  border-left: 1px solid #e0e0e0;
+  padding: 45px 45px 0;
+}
+.textarea_group {
+  margin-bottom: 0;
+}
+.medical__birth .button-group {
+  padding: 45px;
+}
+
+select {
+  text-indent: 0.01px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.fa-angle-down.arrow {
+  position: absolute;
+  right: 10px;
+  top: 22px;
+  bottom: 0;
+  color: #b5c3cf;
+  font-size: 24px;
+}
+/* finish form css */
+
+/* responsive css */
+@media screen and (max-width: 1480px) {
+  .medical__wrapper {
+    width: 85%;
+  }
+  .medical__family .activeTab .step-text p.tab__familyName::before{
+    left: 10px;
+    bottom: 30px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .medical__wrapper {
+    width: 95%;
+  }
+  .medical__family .familyTab.activeTab .step-text {
+    padding: 25px 40px 25px 0 !important;
+  }
+  .tabContainer.familyTab .step-text p{
+    font-size: 13px;
+  }
+  .medical__family .tabContainer.familyTab .step-text{
+    padding: 25px 40px 25px 0;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .activeTab .step-text p {
+    font-size: 14px;
+  }
+  .tabContainer p {
+    font-size: 12px;
+  }
+}

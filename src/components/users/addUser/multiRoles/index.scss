@@ -1,0 +1,18 @@
+.multi-roles {
+    .form-label {
+        z-index: 6;
+    }
+
+    .reactSelect {
+        div[class$="control"] {
+            background-color: transparent;
+            height: 56px;
+            margin-top: 0;
+            border: 0.7px solid #414f63;
+        }
+    }
+}
+.role-disable{
+    background-color: #f5f5f5;
+    opacity: 1;
+}

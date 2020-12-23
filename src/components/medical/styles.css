@@ -1,0 +1,686 @@
+.medical__wrapper {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+.tabContainer {
+  padding: 0px 40px;
+  color: var(--color-white);
+  cursor: pointer;
+  /* border-right: 1px solid var(--color-lightnavyBlue); */
+  /* margin: 12px auto; */
+}
+.tabContainer img {
+  padding-right: 10px;
+}
+.tabContainer p {
+  /* display: inline-block; */
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  color: #8692a1;
+  margin-top: 8px;
+}
+
+.activeTab {
+  padding: 10px 30px;
+  /* margin: 12px auto; */
+  position: relative;
+  background-color: var(--color-lightBlue);
+}
+.medical__tabs:first-child .tabsWrapper .activeTab {
+  border-radius: 4px 0 0 4px;
+}
+.activeTab .step-text {
+  padding: 15px 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 8fr;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.activeTab .step-text img {
+  background-color: #0078bf;
+  width: 47px;
+}
+.activeTab .step-text p {
+  color: #414f63;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+  margin-top: 0;
+}
+.activeTab .step-text p span {
+  color: #0078bf;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tab_icon {
+  float: right;
+  transform: rotate(270deg);
+  position: relative;
+  padding-right: 10px;
+  top: -2px;
+}
+section.tabsWrapper:last-child {
+  border-right: transparent;
+}
+
+/* family inner tabs */
+.medical__family {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  border-top: 1px solid #e0e0e0;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 9fr;
+  align-items: inherit;
+  justify-content: center;
+}
+.medical__family_tabs {
+  border-right: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+.medical__family_tabs .tabsWrapper {
+  border-right: transparent;
+}
+.medical__family_tabs .tabsWrapper .step-text p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.tabContainer.familyTab {
+  padding: 0;
+  background-color: transparent;
+}
+.tabContainer.familyTab .step-text {
+  padding: 25px 75px 25px 0;
+  display: flex;
+  grid-template-rows: 1fr;
+  text-align: left;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.tabContainer.familyTab .step-text,
+.medical__family .activeTab .step-text {
+  justify-content: flex-end;
+}
+.medical__family .activeTab .step-text p span,
+.medical__family .activeTab .step-text p br {
+  display: none;
+}
+.familyTab .step-text p.tab__familyName {
+  order: 2;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  padding: 4px 9px 5px 9px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+.medical__family_tabs
+  .tabsWrapper:first-child
+  .familyTab
+  .step-text
+  p.tab__familyName::before {
+  display: none;
+}
+.medical__family .activeTab::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: -5px;
+  background-color: #0078bf;
+  border-radius: 50%;
+  top: 45%;
+  z-index: 1;
+}
+.familyTab .step-text p.tab__familyName::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #f2f2f2;
+  height: 50px;
+  left: 14px;
+  bottom: 36px;
+}
+.medical__family .activeTab .step-text {
+  padding: 25px 75px 25px 0;
+}
+.medical__family .activeTab .step-text p.tab__familyName::before {
+  border: 1px solid #0078bf;
+}
+.medical__family .activeTab .step-text p.tab__familyName {
+  background-color: #0078bf;
+  color: white;
+}
+.medical__family_content {
+  /* padding: 45px; */
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+/* close family inner tabs */
+/* form css */
+.medical__birth h3,
+.medical__birth p {
+  font-size: 18px;
+  line-height: 21px;
+}
+.medical__birth h3 {
+  font-weight: bold;
+  color: #3d3d3d;
+}
+.medical__birth p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--color-lightBlack);
+}
+.medical__birth_formRow1,
+.medical__birth_formRow2,
+.medical__birth_formRow3,
+.medical__birth_formRow4,
+.medical__birth_formRow5,
+.medical__pregnancy_formRow,
+.medical__perinatal_formRow,
+.medical__postnatal_formRow,
+.medical__prenatal_formRow {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 12px 0;
+}
+.medical__birth_formRow1 {
+  grid-template-columns: 5fr 5fr 2fr;
+}
+.medical__birth_formRow2 {
+  width: 100%;
+  grid-template-columns: 2.15fr 3fr;
+}
+.medical__perinatal_formRow {
+  width: 100%;
+  grid-template-columns: 1fr;
+}
+.medical__postnatal_formRow {
+  width: 70%;
+  grid-template-columns: 3fr 3fr;
+}
+.medical__pregnancy_formRow {
+  width: 100%;
+  grid-template-columns: 3fr 3fr;
+}
+.medical__prenatal_formRow {
+  width: 100%;
+  grid-template-columns: 3fr 4fr;
+}
+.medical__birth_formRow3,
+.medical__birth_formRow5 {
+  width: 100%;
+  grid-template-columns: 1fr;
+}
+.medical__birth_formRow4 {
+  grid-template-columns: repeat(2, 1fr);
+  width: 81%;
+}
+
+.btn-select .btn-addon .btn {
+  width: auto;
+  min-width: 100px;
+}
+.textarea {
+  height: 100px !important;
+  width: 100%;
+  padding: 10px 12px !important;
+}
+.form-group .form-control {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 12px;
+  color: #414f63;
+}
+.form-control[readonly],
+.form-control:disabled {
+  background-color: #f5f5f5;
+}
+.medical__birth_innerWrapper {
+  /* border-left: 1px solid #e0e0e0; */
+  padding: 45px 45px 0 75px;
+}
+.textarea_group {
+  margin-bottom: 0;
+}
+.medical__birth .button-group {
+  padding: 45px;
+}
+
+select {
+  text-indent: 0.01px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.fa-angle-down.arrow {
+  position: absolute;
+  right: 10px;
+  top: 22px;
+  bottom: 0;
+  color: #b5c3cf;
+  font-size: 24px;
+}
+/* finish form css */
+/* general form */
+.general__form {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.general__heading {
+  font-size: 18px;
+  margin: 25px 0;
+  color: var(--color-lightBlack);
+  font-weight: 600;
+}
+.form_wrapper,
+.form_parent__row2,
+.form_parent__row3,
+.form_teacher,
+.form_physician,
+.form_teacher__row2,
+.medical__primary_formRow1,
+.medical__siblings_formRow1,
+.medical__home_formRow1, .medical__familyTrans_formRow1, .medical__learning_formRow {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  margin: 12px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.medical__primary_formRow1 {
+  grid-template-columns: 3fr 3fr 4fr 2fr;
+}
+.medical__familyTrans_formRow1{
+  grid-template-columns: repeat(2, 1fr);
+}
+.medical__learning_formRow{
+  grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+}
+.medical__home_formRow1 {
+  grid-template-columns: 4fr 2fr 4fr 2fr;
+}
+.medical__siblings_formRow1 {
+  grid-template-columns: 4fr 2fr 3fr 4fr;
+  margin: 12px 0;
+  width: 86%;
+}
+.form_wrapper {
+  grid-template-columns: 3fr 3fr 1fr 3fr 2fr;
+}
+.family_changeRs{
+  width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 7fr 5fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.home__heading__wrapper {
+  margin-bottom: 20px;
+}
+.datepicker {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px !important;
+  border: 0.7px solid #414f63 !important;
+}
+.datepicker .ant-picker-input input {
+  color: #414f63;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 2px 0px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.medical-group.dob {
+  top: 4px;
+}
+.medical-group.dob .form-label {
+  top: -11px;
+  z-index: 1;
+}
+.form__parent {
+  width: 48.5%;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  margin: 20px 0 30px 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+.form_parent__row2 {
+  grid-template-columns: 2.9fr 2.9fr 2.8fr 2.8fr;
+  margin: 20px 0 30px 0;
+  width: 97%;
+}
+.medical-group .form-control.phone_border,
+.medical-group .form-control.autocomplete {
+  border: 0.7px solid var(--color-extralightBlue);
+}
+.medical-group .form-control.autocomplete {
+  margin-top: 0;
+  padding: 2px 0;
+}
+.medical-group .form-control.autocomplete:hover,
+.medical-group .form-control.autocomplete:focus {
+  border-color: var(--color-slaty);
+  box-shadow: none;
+}
+.form_parent__row3 {
+  grid-template-columns: 3fr 3fr 1fr 2fr 3fr;
+  margin: 20px 0 30px 0;
+}
+.form_teacher,
+.form_physician {
+  grid-template-columns: 2.9fr 3fr 3fr 3fr;
+  margin: 20px 0 30px 0;
+}
+.form_teacher__row2 {
+  grid-template-columns: 7fr 3fr;
+  width: 50%;
+  margin: 0;
+}
+.teacher__invite.ant-btn-lg {
+  height: 50px;
+  position: relative;
+  top: 5px;
+  border-radius: 5px;
+  background-color: var(--color-lightBlue);
+  border-color: var(--color-lightBlue);
+  font-size: 14px;
+  color: var(--color-slaty);
+  width: 53%;
+}
+.teacher__invite.ant-btn-lg:hover,
+.teacher__invite.ant-btn-lg:focus {
+  background-color: #0078bf;
+  border-color: #0078bf;
+}
+/* finish general css */
+.sibling_remove.anticon.anticon-minus-circle {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  text-align: left;
+}
+.anticon.anticon-minus-circle {
+  position: absolute;
+  right: -25px;
+  top: 27px;
+}
+.addMore__btn.ant-btn-primary {
+  background-color: var(--color-lightBlue);
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-color: var(--color-lightBlue);
+  padding: 0 30px;
+  height: 50px;
+  line-height: 40px;
+  border-radius: 5px;
+  width: 186px;
+  margin: 20px 0 20px;
+}
+.addMore__btn.ant-btn-primary:focus,
+.addMore__btn.ant-btn-primary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+.anticon-plus {
+  font-size: 20px;
+  top: -4px;
+  position: relative;
+}
+.parents_checkbox.ant-checkbox-wrapper {
+  width: 20%;
+  position: relative;
+  background-color: #f2f2f2;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 30px;
+  color: var(--color-slaty);
+}
+.sibling_label .ant-col.ant-form-item-label {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  margin-bottom: 0;
+  padding: 0 1px;
+  line-height: 1;
+  background-color: #ffffff;
+  z-index: 99;
+}
+.ant-form-item-label > label {
+  height: auto;
+}
+.sibling_label
+  .ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  display: none;
+}
+.sibling_label .ant-form-item-label > label::after {
+  content: "";
+}
+.ant-input.form-control:hover {
+  border-color: var(--color-slaty);
+}
+.sibling_delete {
+  position: absolute;
+  right: -34px;
+  top: 25px;
+}
+.medical__primary_formCheckbox{
+  width: 250px;
+  margin: 20px 0;
+}
+.prenatal__checkbox{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.prenatal__checkbox label{
+  font-size: 16px;
+  color: var(--color-slaty);
+  font-weight: 500;
+}
+.birthHistory__row{
+  margin: 12px 0;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+/* checkbox css */
+.medical__learning_formRow .state.p-primary-o,
+.medical__familyTrans_formRow1 .state.p-primary-o, .medical__primary_formCheckbox .state.p-primary-o{
+  width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    background-color: var(--color-lightGray);
+    vertical-align: middle;
+    height: 52px;
+    padding: 15px 5px 15px 20px;
+    border-radius: 5px;
+    top: 7px;
+}
+.medical__learning_formRow .state.p-primary-o label, 
+.medical__familyTrans_formRow1 .state.p-primary-o label, .medical__primary_formCheckbox .state.p-primary-o label{
+  font-size: 14px;
+  color: var(--color-slaty);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+.pretty .state label:before{
+  border-color: var(--color-darkSlaty);
+}
+.medical__learning_formRow .pretty .state label:before, .medical__learning_formRow .pretty .state label:after,
+.medical__familyTrans_formRow1 .pretty .state label:before, .medical__familyTrans_formRow1 .pretty .state label:after,
+.medical__primary_formCheckbox .pretty .state label:before, .medical__primary_formCheckbox .pretty .state.p-primary-o label:after{
+  left: 15px;
+  top: calc((0% - (100% - 5.1em)) - 8%);
+}
+.pretty{
+  margin-right: 0;
+}
+.medical__learning_formRow input:checked ~ .state.p-primary-o,
+.medical__learning_formRow input:checked ~ .state.p-primary-o label,
+.medical__familyTrans_formRow1 input:checked ~ .state.p-primary-o,
+.medical__familyTrans_formRow1 input:checked ~ .state.p-primary-o label,
+.medical__primary_formCheckbox input:checked ~ .state.p-primary-o,
+.medical__primary_formCheckbox input:checked ~ .state.p-primary-o label{
+  background-color: var(--color-lightShimBlue);
+  color: var(--color-primary);
+}
+
+/* ----------------------button css---------------------------- */
+.btnContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  margin: 40px 0;
+  position: relative;
+}
+.back_btn{
+  width: 150px;
+  border-radius: 5px;
+  height: 56px;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+i.fa-long-arrow-left, i.fa-long-arrow-right{
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+}
+i.fa-long-arrow-left{
+  margin-right: 10px;
+}
+i.fa-long-arrow-right{
+  margin-left: 10px;
+  right: 25px;
+  position: absolute;
+  top: 17px;
+}
+.ant-btn.back_btn:hover{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.ant-btn.back_btn:active, .ant-btn.back_btn:focus{
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background-color: var(--color-white);
+}
+.btnContainer .btn_add{
+  width: 150px;
+}
+/* ------------------finish button css------------------------- */
+
+/* responsive css */
+@media screen and (max-width: 1650px) {
+  .tabContainer {
+    padding: 0 30px;
+  }
+  .activeTab {
+    padding: 10px 15px;
+  }
+
+}
+@media screen and (max-width: 1580px){
+  .medical__familyTrans_formRow1{
+    grid-template-columns: 5fr 7fr;
+  }
+  .medical__primary_formRow1 .state.p-primary-o label{
+    font-size: 13px;
+  }
+  .medical__primary_formRow1 .pretty .state label:before, .pretty .state label:after {
+    left: 15px;
+    top: calc((0% - (100% - 5.5em)) - 8%);
+  }
+}
+@media screen and (max-width: 1500px){
+  .tabContainer.familyTab.activeTab .step-text p{
+    font-size: 13px;
+  }
+  .familyTab .step-text p.tab__familyName{
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .tabContainer {
+    padding: 0 15px;
+  }
+  .activeTab {
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 1250px){
+  .medical__birth_innerWrapper {
+    padding: 45px 20px 0 40px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .activeTab .step-text p {
+    font-size: 14px;
+  }
+  .tabContainer p {
+    font-size: 12px;
+  }
+  .medical__learning_formRow{
+      width: 80%;
+  }
+ 
+  .medical__familyTrans_formRow1 {
+    grid-template-columns: 1fr;
+    width: 80%;
+}
+}
+@media screen and (max-width: 1080px) {
+  .medical__pregnancy_formRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

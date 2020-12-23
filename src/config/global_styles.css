@@ -1,0 +1,46 @@
+body {
+  /* font-family: "ProximaNova-Regular"; */
+  --color-slaty: #414f63;
+  --color-lightSkyBlue: #b5c3cf;
+  --color-darkSlaty: #8692a1;
+  --color-primary: #0078bf;
+  --color-offWhite: #e0e0e0;
+  --color-lightYellow: #dedab7;
+  --color-white: #ffffff;
+  --color-black: #333333;
+  --color-lightBlue: #e0f0fa;
+  --color-parrot: #5bdb5a;
+  --color-yellow: #ffca61;
+  --color-lightWhite: #dddddd;
+  --color-navyBlue: #322d46;
+  --color-lightBlack: #3d3d3d;
+  --color-extralightBlue: #9ca6b3;
+  --color-lightGray: #f2f2f2;
+  --color-lightnavyBlue: #b4cad7;
+  --color-lightGrey: #f3f5f7;
+  --color-slimBlack: #7c899d;
+  --color-slimRed: #f88b85;
+  --color-shadeGray: #F9FAFB;
+  --color-lightShimBlue: #E4F3FB;
+  --color-blueShade: #BDD5E4;
+  --color-lightGreyish: #E5E2E2;
+  
+  --color-offWhite: #fcfcfc;
+  --color-darkSeaGreen: #8fbc92;
+  --color-shadyLady: #979797;
+  --color-cinnabar: #e74133;
+  --color-selectiveYellow: #f9bb00;
+  --color-havelockBlue: #4c76be;
+  --color-cornflowerBlue: #3e82f1;
+  --color-eucalyptus: #32a753;
+  --color-spindle: #b1c3d3;
+  --color-mariner: #4267b2;
+  --color-gray: #f1f1f1;
+  --color-red: #e02020;
+  --color-grey: #d0d0d0;
+  --color-greyish: #949494;
+  --color-crayon: #c7b3b3;
+  --color-darkGray: #676767;
+  --color-extradarkGray: #6d6d6d;
+  --container-width: 95%;
+}

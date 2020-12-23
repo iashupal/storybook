@@ -1,0 +1,434 @@
+$color: #414f63;
+$white: #ffffff;
+
+$border-color: #e0e0e0;
+
+body {
+  color: $color;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+input {
+  font-size: 16px;
+  &:focus {
+    outline: none;
+  }
+}
+.button-group {
+  display: flex;
+
+  button {
+    margin-right: 20px;
+  }
+}
+
+.btn {
+  height: 50px;
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
+}
+.btn-addon {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+.margin_b20 {
+  margin-bottom: 20px;
+}
+
+.margin_b30 {
+  margin-bottom: 30px;
+}
+
+.form-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.medical-group {
+  position: relative;
+  // margin-bottom: 28px;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+
+  .form-label {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    background-color: #ffffff;
+    color: #414f63;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    z-index: 1;
+  }
+
+  .form-control {
+    color: #414f63;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 11px;
+    padding: 2px 12px;
+    border: 0.7px solid #414f63;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  .form-control::placeholder {
+    color: #9ca6b3;
+    font-weight: 500;
+  }
+  .form-control[readonly],
+  .form-control:disabled {
+    background-color: #f5f5f5;
+  }
+
+  .button-group {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .btn-sm {
+      width: 100px;
+      height: 40px;
+    }
+  }
+
+  &.btn-select {
+    .form-label {
+      position: relative;
+      top: -4px;
+      left: 0;
+      margin-bottom: -2px;
+      display: block;
+    }
+  }
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-weight: normal;
+  }
+}
+
+.history {
+  min-width: 8%;
+  text-align: center;
+  padding: 0 10px;
+  border-left: 1px solid $border-color;
+
+  .icon {
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.tabsWrapper {
+  border-right: 1px solid var(--color-lightnavyBlue);
+  flex: 1 1 auto;
+
+  .steps {
+    width: 20%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      background-color: #0078bf;
+      border-radius: 50%;
+    }
+  }
+
+  .step-text {
+    p {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+.info-header {
+  margin-bottom: 20px;
+
+  h3 {
+    font-size: 18px;
+    color: #3d3d3d;
+    font-weight: 600;
+  }
+}
+
+.btn-select {
+  .btn-addon {
+    .btn {
+      width: 100px;
+      height: 40px;
+
+      &:hover {
+        border: 0.7px solid #e0f0fa;
+        border-right-width: 1px;
+        background-color: #e0f0fa;
+        opacity: 1;
+      }
+    }
+
+    .btnGender {
+      &_male {
+        border: 0.7px solid #e0f0fa;
+        border-radius: 5px 0 0 5px;
+        background-color: #e0f0fa;
+        padding: 5px 18px;
+      }
+
+      &_female {
+        border: 0.7px solid #d7dde1;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-radius: 0;
+        background-color: transparent;
+        opacity: 0.5;
+      }
+
+      &_others {
+        border: 0.7px solid #d7dde1;
+        border-radius: 0 5px 5px 0;
+        background-color: transparent;
+        opacity: 0.5;
+      }
+    }
+
+    .btnAdopted {
+      &_yes {
+        border: 0.7px solid #e0f0fa;
+        border-radius: 5px 0 0 5px;
+        background-color: #e0f0fa;
+      }
+
+      &_no {
+        border: 0.7px solid #d7dde1;
+        border-radius: 0 5px 5px 0;
+        background-color: transparent;
+        opacity: 0.5;
+      }
+    }
+    .btnChild {
+      &_yes {
+        border: 0.7px solid #e0f0fa;
+        border-radius: 5px 0 0 5px;
+      }
+
+      &_no {
+        border: 0.7px solid #d7dde1;
+        border-radius: 0 5px 5px 0;
+      }
+    }
+    .btnStatus {
+      &_married {
+        border: 0.7px solid #e0f0fa;
+        border-radius: 5px 0 0 5px;
+      }
+      &_separated {
+        border: 0.7px solid #d7dde1;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-radius: 0;
+        opacity: 0.5;
+      }
+      &_widowed {
+        border: 0.7px solid #d7dde1;
+        border-radius: 0 5px 5px 0;
+        opacity: 0.5;
+      }
+      &_divorced {
+        border: 0.7px solid #d7dde1;
+        border-radius: 0 5px 5px 0;
+        opacity: 0.5;
+      }
+      &_single {
+        border: 0.7px solid #d7dde1;
+        border-radius: 0 5px 5px 0;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.btn-save {
+  color: $white;
+  width: 150px;
+  background-color: #0078bf;
+}
+
+.btn-cancel {
+  width: 150px;
+  background-color: #f2f2f2;
+}
+// tab css
+.step-text img {
+  border-radius: 50%;
+  padding: 13px 14px 15px 14px;
+  // padding: 8px;
+  background-color: #f2f2f2;
+  width: 50px;
+  // height: 50px;
+  display: inline-flex;
+  align-items: center;
+  min-width: 40px;
+  object-fit: cover;
+}
+.medical__tabs {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid var(--color-blueShade);
+  padding: 0;
+  text-align: center;
+}
+.child__status {
+  width: var(--container-width);
+  margin: 100px auto 40px;
+  position: relative;
+  display: flex;
+}
+.status__wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.status__rightside {
+  width: 80%;
+  margin: 0 auto;
+}
+.statusInfo__cover {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  // border-right: 1px solid #d6d6d6;
+  gap: 20px 10px;
+}
+.ccfChild_username {
+  display: inline-block;
+  color: var(--color-slaty);
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  padding-left: 5px;
+  margin: 0;
+  vertical-align: middle;
+}
+.ccfChild_username span {
+  font-size: 12px;
+  color: var(--color-darkSlaty);
+  line-height: 14px;
+  font-weight: 500;
+}
+.statusInfo__cover span.name_wrap {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-slaty);
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 50px;
+  background-color: #dedab7;
+  position: relative;
+  top: -5px;
+}
+.status_pending {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 8fr;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.guardian_detail h5.guardianStyle{
+  font-size: 18px;
+}
+// .status_pending p {
+//   font-size: 16px;
+//   color: var(--color-slaty);
+//   font-weight: bold;
+//   line-height: 20px;
+//   margin: 0;
+// }
+.childstatus__percent {
+  background-color: var(--color-lightBlue);
+  border-radius: 5px;
+  box-shadow: 2px 4px 12px 0 rgba(86, 93, 98, 0.1);
+  padding: 20px;
+}
+.childstatus__percent p {
+  font-size: 14px;
+  color: var(--color-primary);
+  font-weight: 500;
+  // border-bottom: 1px solid var(--color-primary);
+  text-decoration: underline;
+  margin: 0;
+  line-height: 16px;
+  text-align: center;
+  cursor: auto;
+}
+.CircularProgressbar.graphStroke .CircularProgressbar-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+.CircularProgressbar.graphStroke .CircularProgressbar-trail {
+  stroke-width: 1px;
+}
+.graphStroke {
+  width: 60px;
+  height: 60px;
+}
+.checkIcon {
+  position: absolute;
+  color: var(--color-primary);
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+}
+.medicalHeading__style {
+  text-align: left;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+.btn_selected{
+  background-color: #e0f0fa;
+}
+.btn_unselected{
+  background-color: transparent;
+}

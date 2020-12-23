@@ -1,0 +1,21 @@
+.guardian_detail {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.guardian_detail p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-darkSlaty);
+  margin: 0;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+.guardian_detail h5 {
+  font-size: 14px;
+  color: var(--color-slaty);
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}

@@ -1,0 +1,351 @@
+$color: #414f63;
+$white: #ffffff;
+
+$border-color: #e0e0e0;
+
+// body {
+//     color: $color;
+//     font-size: 14px;
+//     line-height: 1.5;
+//     margin: 0;
+// }
+
+// input {
+//     font-size: 16px;
+
+//     &:focus {
+//         outline: none;
+//     }
+// }
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}
+
+.btn {
+  height: 50px;
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.btn-addon {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+.margin_b20 {
+  margin-bottom: 20px;
+}
+
+.margin_b30 {
+  margin-bottom: 30px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 30px;
+
+  .form-label {
+    position: absolute;
+    top: -6px;
+    left: 12px;
+    margin-bottom: 0;
+    padding: 0 1px;
+    line-height: 1;
+    background-color: #ffffff;
+    z-index: 99;
+  }
+
+  .form-control {
+    color: #414f63;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 11px;
+    padding: 2px 12px;
+    border: 0.7px solid #414f63;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  .form-control::placeholder {
+    color: #9ca6b3;
+    font-weight: 500;
+  }
+}
+
+.form-group {
+  .button-group {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .btn-sm {
+      width: 100px;
+      height: 40px;
+    }
+  }
+
+  &.btn-select {
+    .form-label {
+      position: static;
+    }
+  }
+
+  &.grade {
+    width: 100px;
+  }
+}
+
+.calenderIconBtn {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 45px;
+  border: 0;
+  background-color: transparent;
+  &:focus {
+    outline: none;
+  }
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-weight: normal;
+  }
+}
+
+.history {
+  min-width: 8%;
+  text-align: center;
+  padding: 0 10px;
+  border-left: 1px solid $border-color;
+
+  .icon {
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.general-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid $border-color;
+  padding: 16px 0;
+  margin-bottom: 30px;
+
+  .steps {
+    width: 20%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      background-color: #0078bf;
+      border-radius: 50%;
+    }
+  }
+
+  .step-text {
+    p {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+.info-header {
+  margin-bottom: 20px;
+
+  h3 {
+    font-size: 18px;
+    color: #3d3d3d;
+    font-weight: 600;
+  }
+}
+
+.btn-select {
+  .btn-addon {
+    .btn {
+      width: 100px;
+      height: 40px;
+
+      &:hover {
+        border: 0.7px solid #e0f0fa;
+        border-right-width: 1px;
+        background-color: #e0f0fa;
+        opacity: 1;
+      }
+    }
+
+    .btnGender {
+      &_selected {
+        border: 0.7px solid #e0f0fa;
+        border-radius: 5px 0 0 5px;
+        background-color: #e0f0fa;
+      }
+
+      &_unselected {
+        border: 0.7px solid #d7dde1;
+
+        border-radius: 0;
+        background-color: transparent;
+        opacity: 0.5;
+      }
+
+      // &_others {
+      //     border: 0.7px solid #D7DDE1;
+      //     border-radius: 0 5px 5px 0;
+      //     background-color: transparent;
+      //     opacity: .5;
+      // }
+    }
+
+    .btnAdopted {
+      &_yes {
+        border: 0.7px solid #e0f0fa;
+        border-radius: 5px 0 0 5px;
+        background-color: #e0f0fa;
+      }
+
+      &_no {
+        border: 0.7px solid #d7dde1;
+        border-radius: 0 5px 5px 0;
+        background-color: transparent;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+.button-group button.btn-save {
+  margin-right: 0;
+}
+.form-control[readonly],
+.form-control:disabled {
+  background-color: #f5f5f5;
+}
+button.btn-save {
+  // color: #0078bf;
+  // width: 150px;
+  // font-weight: 500;
+  // background-color: #e0f0fa;
+  height: 55px;
+  min-width: 139px;
+  color: #0078bf;
+  width: 150px;
+  font-weight: 500;
+  margin-left: 20px;
+  background-color: #e0f0fa;
+}
+button.btn-save:focus,
+button.btn-save:hover {
+  border-color: #005cbf;
+  background-color: #e0f0fa;
+  color: #0078bf;
+}
+button.btn-save:active {
+  color: #0078bf;
+}
+button.invite-button {
+  color: #ffffff;
+  background-color: #0078bf;
+}
+
+.btn-saveInvite {
+  color: #ffffff;
+  background-color: #0078bf;
+}
+
+.btn-cancel {
+  width: 150px;
+  background-color: #f2f2f2;
+}
+// addphysician medication css
+.physician__form{
+  width: 92%;
+  margin: 0;
+  position: relative;
+}
+.medicatn__frm__cover{
+  width: 97%;
+    margin: 0;
+    position: relative;
+    padding-left: 9px;
+}
+.col-md-3.med__week__colums{
+  width: 20%;
+  max-width: 20%;
+  flex: 0 0 20%;
+  padding: 0 8px;
+}
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input).form-control.autocomplete .ant-select-selector,
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector{
+border-color: transparent;
+border-right-width: 0px !important;
+box-shadow: 0 0 0 0;
+}
+.ant-select:not(.ant-select-customize-input).form-control.autocomplete .ant-select-selector,
+.ant-select-single:not(.ant-select-customize-input).form-control.autocomplete .ant-select-selector .ant-select-selection-search-input{
+  height: 45px;
+  padding: 2px 12px;
+  text-align: left;
+  border: none;
+  align-items: center;
+  color: var(--color-slaty);
+  font-weight: 500;
+}
+.ant-select-single.form-control.autocomplete .ant-select-selector .ant-select-selection-search{
+  right: 0;
+  left: 0;
+}
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+  color: white !important;
+  background-color: #1890ff !important;
+  font-weight: 500 !important;
+}
+.col-md-3.visit_datepicker{
+  width: 27%;
+  flex: 0 0 27%;
+  max-width: 27%;
+}
+// responsive css
+@media screen and (max-width: 1350px){
+  .col-md-3.visit_datepicker{
+    width: 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}

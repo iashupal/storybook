@@ -1,0 +1,13 @@
+.heading {
+  font-size: 25px;
+  color: var(--color-slaty);
+  font-weight: bold;
+  line-height: 30px;
+}
+.ccf__heading p {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-slaty);
+  text-align: left;
+  letter-spacing: 0.3px;
+}

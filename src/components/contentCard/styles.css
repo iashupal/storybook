@@ -1,0 +1,21 @@
+.card_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 30px;
+  position: relative;
+  background-color: var(--color-lightShimBlue);
+  /* box-shadow: 2px 4px 12px 0 rgba(86, 93, 98, 0.1); */
+  margin-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.card_wrapper:hover,
+.card_wrapper:focus,
+.card_wrapper:active {
+  border: 1px solid var(--color-lightShimBlue);
+  /* box-shadow: 2px 4px 12px 0 rgba(86, 93, 98, 0.1); */
+}
+.card_wrapper:last-child {
+  margin-right: 0;
+}
